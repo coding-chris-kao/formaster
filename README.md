@@ -2,6 +2,10 @@
 
 A powerful Formatter Master for formatting the strings in different use cases
 
+# Demo
+
+![Demo](https://github.com/coding-chris-kao/formaster/blob/formaster_demo.gif?raw=true)
+
 ## Contributes
 
 - `formaster.toCamel`: formatToCamel

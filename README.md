@@ -2,6 +2,8 @@
 
 A powerful Formatter Master for formatting the strings in different use cases
 
+> Not a formatter, it's a Formaster.
+
 # Demo
 
 ![Demo](https://github.com/coding-chris-kao/formaster/blob/main/blob/formaster_demo.gif?raw=true)

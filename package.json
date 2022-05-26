@@ -3,6 +3,16 @@
   "displayName": "Formaster",
   "description": "A powerful Formatter Master for formatting the strings in different use cases",
   "version": "0.0.1",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://github.com/coding-chris-kao/formaster",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coding-chris-kao/formaster"
+  },
+  "author": {
+		"name": "coding-chris-kao",
+		"email": "chi1010860@gmail.com"
+	},
   "engines": {
     "vscode": "^1.67.0"
   },
@@ -10,7 +20,7 @@
     "Formatters"
   ],
   "activationEvents": [
-    "*"
+    "formaster.*"
   ],
   "main": "./out/extension.js",
   "contributes": {

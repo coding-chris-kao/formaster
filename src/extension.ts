@@ -9,7 +9,13 @@ export function activate(context: vscode.ExtensionContext) {
   // Use the console to output diagnostic information (console.log) and errors (console.error)
   // This line of code will only be executed once when your extension is activated
   console.log('The extension "formaster" is now active!')
+  registerCommands(context)
+}
 
+// this method is called when your extension is deactivated
+export function deactivate() {}
+
+export function registerCommands(context: vscode.ExtensionContext) {
   const formaster = new Formaster()
   const methods = Object.getOwnPropertyNames(
     Object.getPrototypeOf(formaster)
@@ -18,7 +24,7 @@ export function activate(context: vscode.ExtensionContext) {
   for (let method of methods) {
     const command = vscode.commands.registerTextEditorCommand(
       `formaster.${method}`,
-      function (editor: vscode.TextEditor, edit: vscode.TextEditorEdit) {
+      (editor: vscode.TextEditor, edit: vscode.TextEditorEdit) => {
         if (!editor) {
           return
         }
@@ -53,6 +59,3 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(command)
   }
 }
-
-// this method is called when your extension is deactivated
-export function deactivate() {}

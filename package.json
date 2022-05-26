@@ -1,0 +1,135 @@
+{
+  "name": "formaster",
+  "displayName": "Formaster",
+  "description": "Formatter Master",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.67.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:formaster.toCamel"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "formaster.toCamel",
+        "title": "formatToCamel",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toPascal",
+        "title": "FormatToPascal",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toCapital",
+        "title": "Format to capital",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toKebab",
+        "title": "format-to-kebab",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toSnake",
+        "title": "format_to_snake",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toDot",
+        "title": "format.to.dot",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toDotCaps",
+        "title": "Format.To.Dot.Caps",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toColon",
+        "title": "format:to:colon",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toCommas",
+        "title": "format, to, commas",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toSlash",
+        "title": "format/to/slash",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toDoubleSlash",
+        "title": "format//to//double//slash",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toBackSlash",
+        "title": "format\\to\\back\\slash",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toDoubleBackSlash",
+        "title": "format\\\\to\\\\double\\\\back\\\\slash",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toAllCaps",
+        "title": "FORMAT_TO_ALL_CAPS",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toLower",
+        "title": "format to kebab",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toUpper",
+        "title": "FORMAT TO UPPER",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toDeburr",
+        "title": "formàt to deburr",
+        "category": "Formaster"
+      },
+      {
+        "command": "formaster.toReverse",
+        "title": "Format to reverse",
+        "category": "Formaster"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/lodash": "^4.14.182",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.67.0",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "@vscode/test-electron": "^2.1.3",
+    "eslint": "^8.14.0",
+    "glob": "^8.0.1",
+    "mocha": "^9.2.2",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

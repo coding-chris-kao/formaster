@@ -1,6 +1,6 @@
 # Formaster
 
-A powerful Formatter Master for formatting the stings in different use cases
+A powerful Formatter Master for formatting the strings in different use cases
 
 ## Contributes
 

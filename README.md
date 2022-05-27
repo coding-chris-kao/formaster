@@ -2,7 +2,7 @@
 
 A powerful Formatter Master for formatting the strings in different use cases
 
-> Not a formatter, it's a Formaster.
+> Not a formatter, it's a Formaster, for the master.
 
 # Demo
 
